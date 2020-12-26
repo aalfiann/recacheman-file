@@ -1,4 +1,4 @@
-> This is a fork version of [recacheman-file](https://github.com/anaptfox/cacheman-file) with following differences :
+> This is a fork version of [cacheman-file](https://github.com/anaptfox/cacheman-file) with following differences :
 - Minimum NodeJS 10
 - Removed old libraries
 - Fixing all vulnerables
