@@ -1,0 +1,6 @@
+node_modules/
+tmp
+temp/
+*.tgz
+coverage
+.nyc_output
