@@ -41,13 +41,11 @@ FileStore.prototype.get = function get(key, fn) {
   if (Fs.existsSync(cacheFile)) {
     data = Fs.readFileSync(cacheFile);
     data = JSON.parse(data);
+    self.cache[key] = data.expire; //ensures cache sync in all clusters.
   } else {
     return fn(null, null);
   }
 
-  if (!this.cache[key]) {
-    return fn(null, null);
-  }
 
   if (!data) return fn(null, data);
   if (data.expire < Date.now()) {
@@ -85,7 +83,7 @@ FileStore.prototype.set = function set(key, val, ttl, fn) {
   try {
     data = {
       value: JSON.stringify(val),
-      expire: JSON.stringify(Date.now() + ttl)
+      expire: Date.now() + ttl
     };
   } catch (e) {
     return fn(e);

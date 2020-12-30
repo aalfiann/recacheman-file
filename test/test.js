@@ -39,7 +39,7 @@ describe('cacheman-file', function() {
       if (err) return done(err);
       cache.get('test1', function(err, data) {
         if (err) return done(err);
-        assert.equal(data.a, 1);
+        assert.strictEqual(data.a, 1);
         done();
       });
     });
@@ -88,12 +88,12 @@ describe('cacheman-file', function() {
       // compare cached key against sanitized key
       var lastKey = Object.keys(cache.cache).pop();
       var sanitizedKey = sanitize(key);
-      assert.equal(sanitizedKey, lastKey);
+      assert.strictEqual(sanitizedKey, lastKey);
 
       // check functionality, along the way
       cache.get(key, function(err, data) {
         if (err) return done(err);
-        assert.equal(data.a, 1);
+        assert.strictEqual(data.a, 1);
         done();
       });
     });
@@ -105,12 +105,12 @@ describe('cacheman-file', function() {
       if (err) return done(err);
       cache.get('test5', function(err, data) {
         if (err) return done(err);
-        assert.equal(data, value);
+        assert.strictEqual(data, value);
         cache.del('test5', function(err) {
           if (err) return done(err);
           cache.get('test5', function(err, data) {
             if (err) return done(err);
-            assert.equal(data, null);
+            assert.strictEqual(data, null);
             done();
           });
         });
@@ -124,12 +124,12 @@ describe('cacheman-file', function() {
       if (err) return done(err);
       cache.get('test6', function(err, data) {
         if (err) return done(err);
-        assert.equal(data, value);
+        assert.strictEqual(data, value);
         cache.clear('', function(err) {
           if (err) return done(err);
           cache.get('test6', function(err, data) {
             if (err) return done(err);
-            assert.equal(data, null);
+            assert.strictEqual(data, null);
             done();
           });
         });
@@ -146,7 +146,7 @@ describe('cacheman-file', function() {
       setTimeout(function() {
         cache.get('test1', function(err, data) {
           if (err) return done(err);
-          assert.equal(data, null);
+          assert.strictEqual(data, null);
           done();
         });
       }, 1100);
@@ -161,15 +161,15 @@ describe('cacheman-file', function() {
     ];
 
     cache.set('test1', items[0], function (err) {
-      assert.deepEqual(null, err);
+      assert.deepStrictEqual(null, err);
       cache.set('test2', items[1], function (err) {
-        assert.deepEqual(null, err);
+        assert.deepStrictEqual(null, err);
         cache.set('test3', items[2], function (err) {
-          assert.deepEqual(null, err);
+          assert.deepStrictEqual(null, err);
 
           cache.getAll(function (err, results) {
-            assert.deepEqual(null, err);
-            assert.deepEqual(items, results);
+            assert.deepStrictEqual(null, err);
+            assert.deepStrictEqual(items, results);
             done();
           });
         });
