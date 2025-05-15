@@ -5,6 +5,7 @@
 [![NPM](https://nodei.co/npm/recacheman-file.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/recacheman-file/)  
   
 [![npm version](https://img.shields.io/npm/v/recacheman-file.svg?style=flat-square)](https://www.npmjs.org/package/recacheman-file)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/aalfiann/recacheman-file/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/aalfiann/recacheman-file/tree/master)
 [![Known Vulnerabilities](https://snyk.io//test/github/aalfiann/recacheman-file/badge.svg?targetFile=package.json)](https://snyk.io//test/github/aalfiann/recacheman-file?targetFile=package.json)
 ![License](https://img.shields.io/npm/l/recacheman-file)
 ![NPM download/month](https://img.shields.io/npm/dm/recacheman-file.svg)
