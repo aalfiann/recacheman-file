@@ -1,22 +1,22 @@
-> This is a fork version of [cacheman-file](https://github.com/anaptfox/cacheman-file) with following differences :
-- Minimum NodeJS 10
-- Removed old libraries
-- Fixing all vulnerables
-- Up to date
+> This is a fork version of [cacheman-file](https://github.com/anaptfox/cacheman-file)
 
 # recacheman-file
 
 [![NPM](https://nodei.co/npm/recacheman-file.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/recacheman-file/)  
   
 [![npm version](https://img.shields.io/npm/v/recacheman-file.svg?style=flat-square)](https://www.npmjs.org/package/recacheman-file)
-[![Build Status](https://travis-ci.com/aalfiann/recacheman-file.svg?branch=master)](https://travis-ci.com/aalfiann/recacheman-file)
-[![Coverage Status](https://coveralls.io/repos/github/aalfiann/recacheman-file/badge.svg?branch=master)](https://coveralls.io/github/aalfiann/recacheman-file?branch=master)
 [![Known Vulnerabilities](https://snyk.io//test/github/aalfiann/recacheman-file/badge.svg?targetFile=package.json)](https://snyk.io//test/github/aalfiann/recacheman-file?targetFile=package.json)
 ![License](https://img.shields.io/npm/l/recacheman-file)
 ![NPM download/month](https://img.shields.io/npm/dm/recacheman-file.svg)
 ![NPM download total](https://img.shields.io/npm/dt/recacheman-file.svg)  
 
 File caching library for Node.JS and also cache engine for [recacheman](https://github.com/aalfiann/recacheman).
+
+
+| Version | Node.JS |
+|---|---|
+| 0.x | 10, 12, 14, 16, 18, 20 |
+| 1.x | 20, 22 |
 
 ## Instalation
 
@@ -140,7 +140,9 @@ $ npm test
 
 (The MIT License)
 
-Copyright (c) 2013 Taron Foxworth &lt;taronfoxworth@gmail.com&gt; , Jeremiah Harlan &lt;jeremiah.harlan@gmail.com&gt;
+Copyright (c) 2013 Taron Foxworth &lt;taronfoxworth@gmail.com&gt;,  
+Jeremiah Harlan &lt;jeremiah.harlan@gmail.com&gt;,  
+M Abd Aziz Alfian &lt;aalfiann@gmail.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

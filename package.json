@@ -1,18 +1,15 @@
 {
   "name": "recacheman-file",
-  "version": "0.2.5",
+  "version": "1.0.0",
   "description": "File caching library for Node.JS and also cache engine for cacheman",
   "author": "Taron Foxworth <taronfoxworth@gmail.com>",
   "contributors": [
-    {
-      "name": "Jeremiah Harlan",
-      "email": "jeremiah.harlan@gmail.com"
-    }
+    "Jeremiah Harlan <jeremiah.harlan@gmail.com>",
+    "M Abd Aziz Alfian <aalfiann@gmail.com>"
   ],
   "main": "index.js",
   "scripts": {
-    "test": "nyc --reporter=html --reporter=text mocha",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "test": "c8 --reporter=html --reporter=text --reporter=text-summary mocha"
   },
   "repository": {
     "type": "git",
@@ -27,14 +24,12 @@
     "cacheman"
   ],
   "license": "MIT",
-  "devDependencies": {
-    "coveralls": "^3.1.0",
-    "mocha": "^8.2.1",
-    "mocha-lcov-reporter": "^1.3.0",
-    "nyc": "^15.1.0"
-  },
   "dependencies": {
-    "fs-extra": "~0.26.2",
-    "sanitize-filename": "^1.5.3"
+    "fs-extra": "^11.3.0",
+    "sanitize-filename": "^1.6.3"
+  },
+  "devDependencies": {
+    "c8": "^10.1.3",
+    "mocha": "^11.2.2"
   }
 }
