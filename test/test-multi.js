@@ -1,6 +1,6 @@
 var assert = require('assert');
 var Path = require('path');
-var Cache = require('../');
+var Cache = require('../src/index');
 
 describe('cacheman-file-multi', function() {
   var cache1,

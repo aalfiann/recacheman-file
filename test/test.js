@@ -2,7 +2,7 @@ var assert = require('assert');
 var Path = require('path');
 var Fs = require('fs-extra');
 var sanitize = require('sanitize-filename');
-var Cache = require('../');
+var Cache = require('../src/index');
 var cache;
 
 describe('cacheman-file', function() {
